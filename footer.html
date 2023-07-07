@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Webpage Footer</title>
+  <style>
+    /* CSS for the footer */
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      height: 170px;
+    }
+
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .footer-text {
+      flex: 1;
+      text-align: center;
+      width: 350px;
+      margin-top: 10px;
+    }
+
+    .footer-lists {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-list {
+      margin: 0 10px;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .footer-list a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .footer-input {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3px;
+      padding: 2px;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      padding: 5px;
+    }
+
+    .subscribe-button {
+      background-color: rgb(4, 107, 148);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .footer-section {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .footer-section:last-child {
+        align-items: center;
+      }
+
+      .footer-lists {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .footer-list {
+        margin: 5px;
+        margin-top: 10px;
+      }
+
+      .footer-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10px;
+      }
+
+      .subscribe-input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="footer-text">
+        <h2>One Card</h2>
+        <p>India's best metal card . Built with full-stack tech. Backed by the principle of simplicity, transparency and giving back control to the user</p>
+      </div>
+    </div>
+    <div class="footer-section">
+        <h2>Navigation</h2>
+      <ul class="footer-lists">
+        <li class="footer-list"><a href="#">Home</a></li>
+        <li class="footer-list"><a href="#">About us</a></li>
+        <li class="footer-list"><a href="#">Careers</a></li>
+        <li class="footer-list"><a href="#">Offers</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+        <h2>Support</h2>
+      <ul class="footer-lists">
+        <li class="footer-list"><a href="#">F.A.Q.</a></li>
+        <li class="footer-list"><a href="#">Cookies Policies</a></li>
+        <li class="footer-list"><a href="#">Terms of Services</a></li>
+        <li class="footer-list"><a href="#">Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+        <h2>NewsLetter</h2>
+      <div class="footer-input">
+        <input type="text" class="subscribe-input" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
